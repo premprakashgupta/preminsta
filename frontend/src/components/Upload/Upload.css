@@ -1,0 +1,218 @@
+.uploadContainer {
+  width: 100%;
+  height: calc(100vh - 60px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.452);
+}
+.uploadContainer .uploadClose {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+.uploadContainer .discardBox {
+  width: 400px;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 1px 2px 4px #ccc;
+  text-align: center;
+}
+.uploadContainer .discardBox h3 {
+  margin: 10px 0;
+  font-style: normal;
+}
+.uploadContainer .discardBox small {
+  margin: 10px 0;
+  color: #ccc;
+}
+.uploadContainer .discardBox p {
+  padding: 10px 0px;
+  text-align: center;
+  cursor: pointer;
+  margin: 5px 10px;
+  font-weight: bold;
+}
+.uploadContainer .discardBox .discardbtn {
+  border-bottom: 0.5px solid #ccc;
+  border-top: 0.5px solid #ccc;
+  color: rgb(230, 96, 19);
+  margin-top: 30px;
+}
+.uploadContainer .discardBox p:hover {
+  font-weight: bold;
+}
+.uploadContainer .uploadClose svg {
+  color: #fff;
+}
+.uploadContainer .uploadSection {
+  width: 635px;
+  height: 535px;
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+.uploadContainer .uploadSection form {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 15px;
+}
+.uploadContainer .uploadSection form h3 {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #e8e8e8;
+  text-align: center;
+  padding: 5px 2px;
+}
+.uploadSection form h3 img {
+  cursor: not-allowed;
+  width: 20px;
+  height: 20px;
+  float: right;
+}
+.uploadContainer .uploadSection form h3 .uploadNext {
+  color: #0098f6;
+  padding: 5px 2px;
+  float: right;
+  padding-right: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+.uploadContainer .uploadSection form .uploadContent {
+  width: 100%;
+  height: calc(100% - 36px);
+  border-bottom: 1px solid #e8e8e8;
+  text-align: center;
+  padding: 5px 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.uploadContainer .uploadSection form .uploadedContent {
+  width: 100%;
+  height: calc(100% - 36px);
+}
+.uploadContainer .uploadSection form .uploadedContent img {
+  width: 100%;
+  height: 100%;
+}
+.uploadContainer .uploadSection form .uploadContent label {
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+}
+.uploadContainer .uploadSection form .uploadContent label svg {
+  display: none;
+}
+.uploadContainer .uploadSection form .uploadContent label div span {
+  width: 100%;
+  height: auto;
+  top: unset;
+  right: unset;
+  position: unset;
+  font-size: 1.5rem;
+}
+.uploadBtn {
+  position: relative;
+}
+.uploadBtn::after {
+  content: "Select File";
+  width: auto;
+  height: auto;
+  padding: 15px 25px;
+  background-color: #0098f6;
+  position: absolute;
+  bottom: -110%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.head_section {
+  width: 100%;
+  height: 60px;
+  background-color: #fff;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.uploadContent .captionWrite {
+  width: 400px;
+  height: 100%;
+  padding: 10px 5px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+.uploadContent .captionWrite textarea {
+  width: 100%;
+  height: 300px;
+  padding: 10px;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.uploadContent .captionWrite textarea::placeholder {
+  letter-spacing: 2px;
+}
+.uploadContent .captionWrite .head_section span {
+  width: 160px;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.uploadContent .captionWrite .head_section span .head_pic {
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  background-color: var(--bgcolor);
+  margin-right: 1rem;
+}
+.uploadContent .captionWrite .head_section span .head_pic img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: 100%;
+}
+.uploadContent .captionWrite .head_section span .head_name {
+  width: auto;
+  height: 100%;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 770px) {
+  .uploadContainer .uploadSection {
+    width: 90%;
+  }
+  .uploadContainer .uploadSection .uploadContent {
+    flex-direction: column;
+  }
+  .uploadContent .captionWrite {
+    width: 100%;
+  }
+  .uploadContent .captionWrite textarea {
+    height: auto;
+  }
+}

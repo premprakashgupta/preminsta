@@ -1,0 +1,17 @@
+.leftDiv .slides .slide-container{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+}
+.each-fade{
+    width: 246px;
+    height: 435px;
+    pointer-events: none;
+}
+.each-fade img{
+    width: 100%;
+    height: 100%;
+}
+.nav.default-nav {
+  display: none;  
+}

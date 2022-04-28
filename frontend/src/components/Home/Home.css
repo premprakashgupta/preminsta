@@ -1,0 +1,133 @@
+.owner_profile_section {
+  width: 19.53vw;
+  height: calc(100vh - 90px);
+  position: fixed;
+  background-color: transparent;
+  top: 86px;
+  left: 62%;
+  padding: 1rem;
+  /*    background-color: yellow;*/
+  z-index: 1;
+}
+.owner_profile_section span {
+  width: auto;
+  height: auto;
+  font-weight: 600;
+  display: block;
+  color: #909090;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+}
+.owner_profile_section .user_profile {
+  width: 100%;
+  height: 13%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  /*    background-color: red;*/
+}
+.owner_profile_section .user_profile a {
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+.owner_profile_section .user_profile .user_profile_box {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.owner_profile_section .user_profile .user_profile_box .user_pic {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background-color: #fff;
+}
+.owner_profile_section .user_profile .user_profile_box .user_pic img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 100%;
+}
+/* .owner_profile_section .user_profile .user_profile_box .user_name{
+    padding-top: 1.5rem;
+} */
+.owner_profile_section .user_profile .user_profile_box .user_name a {
+  font-weight: 600;
+  color: #000;
+  width: auto;
+  height: auto;
+  font-size: 0.9rem;
+}
+.owner_profile_section .user_profile .user_profile_box .user_name a:hover {
+  text-decoration: none;
+}
+.owner_profile_section .user_profile .user_profile_box .user_name p {
+  font-size: 0.9rem;
+}
+
+
+.owner_profile_section_lower_part {
+  width: 100%;
+  height: auto;
+}
+.owner_profile_section_lower_part .link {
+  width: 100%;
+  height: auto;
+  background-color: transparent;
+}
+.owner_profile_section_lower_part .link ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.owner_profile_section_lower_part .link ul li {
+  width: auto;
+  height: auto;
+  padding: 0.2rem;
+
+  text-align: center;
+  color: #909090;
+}
+.owner_profile_section_lower_part .link ul li a {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #909090;
+  text-align: center;
+}
+.owner_profile_section_lower_part .copy_right {
+  width: 100%;
+  height: auto;
+  font-size: 0.8rem;
+}
+
+@media screen and (max-width: 1150px) {
+  section {
+    width: 100%;
+  }
+  section .post_section {
+    width: 100%;
+  }
+  .owner_profile_section {
+    display: none;
+  }
+  .container-fluid header .navbar nav .menu_section {
+    display: none;
+  }
+  .container-fluid header .navbar nav .search_bar {
+    display: none;
+  }
+  .owner_profile_section .user_profile .user_profile_box {
+    flex-direction: column;
+  }
+  .owner_profile_section
+    .suggestion
+    .suggestion_profile
+    .suggestion_profile_box {
+    flex-direction: column;
+  }
+}

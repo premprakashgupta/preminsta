@@ -1,0 +1,380 @@
+section {
+  width: 59.89vw;
+  height: auto;
+  margin: 65px auto 0 auto;
+  background-color: transparent;
+  display: flex;
+  position: relative;
+}
+
+/* for post content-------------------------------------------------------------------- */
+section .post_section {
+  width: 40.35vw;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /*    overflow-y: scroll;*/
+}
+section .post_section .post_collection {
+  width: 100%;
+  height: auto;
+  border: var(--bordercolor) 1px solid;
+  margin: 20px 0;
+  background-color: #fff;
+  border-radius: 5px;
+}
+section .post_section .post_collection .head_section {
+  width: 100%;
+  height: 60px;
+  background-color: #fff;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section .post_section .post_collection .head_section span {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section .post_section .post_collection .head_section .time {
+  width: auto;
+  height: 100%;
+  font-size: 8px;
+  color: #ccc;
+  margin-left: 10px;
+}
+section .post_section .post_collection .head_section span .head_pic {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: var(--bgcolor);
+  margin-right: 1rem;
+}
+section .post_section .post_collection .head_section span .head_pic img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: 100%;
+}
+section .post_section .post_collection .head_section span .head_name {
+  max-width: 160px;
+  height: 100%;
+  font-weight: 600;
+  display: inline-block;
+  line-height: 40px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+section .post_section .post_collection .head_section .three_dot {
+  font-size: 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+section .post_section .post_collection .post_content {
+  width: 100%;
+  height: 600px;
+  background-color: var(--bgcolor);
+  position: relative;
+}
+section .post_section .post_collection .post_content span {
+  display: none;
+}
+.glowheart {
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block !important;
+}
+.glowheart svg {
+  color: rgba(241, 39, 234, 0.996);
+  animation: 0.8s glow 1;
+  transition: 0.8s;
+}
+@keyframes glow {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  25% {
+    transform: scale(1);
+    opacity: 0.5;
+    text-shadow: 1px 1px 3px rgba(241, 39, 235, 0.36),
+      -1px -1px 3px rgba(241, 39, 235, 0.36);
+  }
+  50% {
+    transform: scale(2);
+    opacity: 1;
+    text-shadow: 1.5px 1.5px 3px rgba(241, 39, 235, 0.56),
+      -1.5px -1.5px 3px rgba(241, 39, 235, 0.56);
+  }
+  75% {
+    transform: scale(3);
+    opacity: 0.5;
+    text-shadow: 1px 1px 5px rgba(241, 39, 235, 0.76),
+      -1px -1px 5px rgba(241, 39, 235, 0.76);
+  }
+  100% {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+section .post_section .post_collection .post_content img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+section .post_section .post_collection .like_cmt_share_section {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+section .post_section .post_collection .like_cmt_share {
+  width: auto;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section .post_section .post_collection .like_cmt_share svg {
+  width: 30px;
+  height: 100%;
+  margin: 0 5px;
+  font-size: 1.7rem;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+}
+section .post_section .post_collection .like_cmt_share_section .save_post svg {
+  width: 30px;
+  height: 100%;
+  margin: 0 5px;
+  font-size: 1.7rem;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+}
+section .post_section .post_collection .like_count {
+  width: 100%;
+  height: auto;
+  padding: 0 0.5rem;
+}
+section .post_section .post_collection .post_description {
+  width: 100%;
+  height: auto;
+  /*    background-color: red;*/
+  padding: 0.5rem;
+}
+section .post_section .post_collection .post_description p {
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+section .post_section .post_collection .post_description .whitespace {
+  white-space: normal !important;
+}
+section .post_section .post_collection .post_description .more {
+  width: auto;
+  height: auto;
+  display: inline-block;
+  margin-top: 0;
+  cursor: pointer;
+  /*    background-color: ;*/
+}
+
+section .post_section .post_collection .comment {
+  width: 100%;
+  height: auto;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f3efef;
+}
+section .post_section .post_collection .comment .recentCommentBox {
+  width: 100%;
+  max-height: 100px;
+  padding: 0.5rem;
+  overflow-y: scroll;
+}
+section
+  .post_section
+  .post_collection
+  .comment
+  .recentCommentBox::-webkit-scrollbar {
+  width: 0%;
+}
+section .post_section .post_collection .comment .recentCommentBox ul {
+  width: 100%;
+  height: auto;
+}
+section .post_section .post_collection .comment .recentCommentBox ul li {
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section
+  .post_section
+  .post_collection
+  .comment
+  .recentCommentBox
+  ul
+  li
+  .commentSpan {
+  font-size: 13px;
+}
+section
+  .post_section
+  .post_collection
+  .comment
+  .recentCommentBox
+  ul
+  li
+  .commentSpan
+  span {
+  width: 160px;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+section
+  .post_section
+  .post_collection
+  .comment
+  .recentCommentBox
+  ul
+  li
+  .commentTimeSpan {
+  font-size: 10px;
+  color: #bab5b5;
+}
+section
+  .post_section
+  .post_collection
+  .comment
+  .recentCommentBox
+  ul
+  li
+  .commentSpan
+  span
+  .head_pic {
+  width: 35px;
+  height: 30px;
+  border-radius: 100%;
+  background-color: var(--bgcolor);
+  margin-right: 0.5rem;
+}
+section
+  .post_section
+  .post_collection
+  .comment
+  .recentCommentBox
+  ul
+  li
+  .commentSpan
+  span
+  .head_pic
+  img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: 100%;
+}
+section
+  .post_section
+  .post_collection
+  .comment
+  .recentCommentBox
+  ul
+  li
+  .commentSpan
+  span
+  .head_name {
+  width: 160px;
+  height: 100%;
+  font-weight: 600;
+  display: inline-block;
+  align-items: center;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+section
+  .post_section
+  .post_collection
+  .comment
+  .recentCommentBox
+  ul
+  li
+  .commentSpan
+  p {
+  padding: 0 50px;
+  white-space: pre-wrap;
+}
+section .post_section .post_collection .comment .comment_input {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section
+  .post_section
+  .post_collection
+  .comment
+  .comment_input
+  .comment_Input_inner {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+section .post_section .post_collection .comment .comment_input svg {
+  width: 30px;
+  height: 100%;
+  text-align: center;
+  margin-right: 10px;
+  font-size: 1.8rem;
+  line-height: 60px;
+}
+section .post_section .post_collection .comment .comment_input input {
+  border: none;
+  outline: none;
+  background-color: #f3efef;
+}
+section .post_section .post_collection .comment button {
+  background-color: transparent;
+  color: rgb(32, 183, 242);
+  font-weight: 600;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+section .post_section .post_collection .comment button:disabled {
+  color: rgb(184, 222, 237);
+}
+
+section .post_section .post_collection .comment img {
+  width: 15px;
+  height: 15px;
+}

@@ -1,0 +1,45 @@
+.flex{
+    display: flex;
+}
+.align-items-center{
+    align-items: center;
+}
+.space-center{
+    justify-content: center;
+}
+.pageNotFoundBox{
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+}
+.pageNotFound{
+    width: 80%;
+    height: 60vh;
+    background-color: transparent;
+    position: relative;
+    -webkit-box-reflect: below -30vh linear-gradient(transparent, rgba(255, 255, 255, 0.089));
+
+}
+.pageNotFound span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.pageNotFound span:nth-child(1){
+    color: transparent;
+    font-size: 13rem;
+    font-weight: bolder;
+    -webkit-text-stroke: 5px skyblue;
+    text-shadow: 2px 3px 7px skyblue;
+}
+.pageNotFound span:nth-child(2){
+    font-size: 4rem;
+    font-weight: bolder;
+    text-transform: capitalize;
+    color: #fff;
+    -webkit-text-stroke: 1px skyblue;
+}

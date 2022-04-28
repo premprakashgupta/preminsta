@@ -1,0 +1,263 @@
+.LoginContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center; 
+    background-color: #FAFAFA;
+    flex-direction: column;
+}
+.LoginContainer .LoginInnerContainer{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    background-color: #FAFAFA;
+    
+}
+.LoginContainer .LoginInnerContainer .leftDiv{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
+.LoginContainer .LoginInnerContainer .leftDiv .content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.LoginContainer .LoginInnerContainer .leftDiv .slides{
+    width: 246px;
+    height: 435px;
+    background-color: transparent;
+    position: absolute;
+    top: 163px;
+    right: 60px;
+}
+
+.LoginContainer .LoginInnerContainer .rightDiv{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.form{
+    width: 300px;
+    height: auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+.form-group{
+    width: 100%;
+    padding: 2px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    background-color: #FAFAFA;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+.LoginContainer .LoginInnerContainer .rightDiv .form .form-group input[type="submit"]:disabled{
+
+    background-color: rgb(170, 215, 233);
+    cursor: not-allowed;
+    background-image: url('../../../public/image/loader.gif');
+    background-position: center;
+    background-size: 20px;
+    background-repeat: no-repeat;
+}
+.form-group .show_and_hide{
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 13px
+}
+.LoginContainer .LoginInnerContainer .rightDiv .form .logo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 47px;
+    margin: 19px 0;
+}
+.LoginContainer .LoginInnerContainer .rightDiv .form .logo img{
+    width: auto;
+    height: 100%;
+}
+.user-input-wrp {
+	position: relative;
+	flex: 7;
+    height: 32px;
+    
+}
+.user-input-wrp .inputText{
+	width: 100%;
+    height: 100%;
+	outline: none;
+	border:none;
+ 	box-shadow: none !important;
+     background-color: #FAFAFA;
+     padding: 2px 10px;
+     position: absolute;
+     bottom: 0;
+}
+.user-input-wrp .inputText:valid{
+	border-color: #333;
+	border-width: medium medium 1px;
+    height: 50%;
+}
+.user-input-wrp .floating-label {
+	position: absolute;
+	pointer-events: none;
+	height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	transition: 0.2s ease all;
+    font-size: small;
+    top: 0;
+    padding: 0 10px;
+}
+
+.user-input-wrp input:valid ~ .floating-label{
+	height: 50%;
+	font-size: 10px;
+	opacity: 1;
+}
+.form-group input[type="submit"]{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    background-color: #0095F6;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    border-radius: 3px;
+    color: #fff;
+    font-weight: bold;
+}
+.lineBox{
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: block;
+    padding: 12px 0;
+}
+.lineBox .line{
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+    display: block;
+}
+.lineBox .or{
+    padding: 5px;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%,-50%);
+}
+.LogInFacebook,.ForgotPassword{
+    width: 100%;
+    padding: 14px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.LogInFacebook a,.ForgotPassword a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.LogInFacebook a svg{
+    color: #4267B2;
+}
+.LogInFacebook a span{
+    margin-left: 10px;
+    color: #385185;
+}
+.ForgotPassword a{
+    font-size: small;
+    color: #00376b;
+}
+.signUpBox{
+    width: 300px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin-top: 15px;
+}
+.signUpBox p a{
+    color: #0095F6;
+    font-weight: bold;
+}
+.getTheApp{
+    width: 300px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.getTheApp p{
+    text-align: center;
+    margin: 10px 0;
+}
+.getTheApp .content{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.getTheApp .content img{
+    width: 45%;
+    height: 100%;
+}
+.information{
+    width: 49%;
+    height: auto;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.information a{
+    display: inline-block;
+    margin: 5px 10px;
+    font-size: 14px;
+    color: #ccc;
+    text-transform: capitalize;
+}
+@media(max-width: 770px) {
+    .leftDiv{
+        display: none;
+    }
+    .rightDiv{
+        width: 100%;
+        
+        justify-content: center;
+        align-items: center;
+    }
+    .form{
+        width: 305px;
+    }
+    .signUpBox{
+        width: 305px;
+    }
+    .getTheApp{
+        width: 305px;
+    }
+}

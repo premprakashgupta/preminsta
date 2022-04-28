@@ -1,0 +1,224 @@
+
+.profileContainer {
+  width: 70%;
+  height: auto;
+  margin: 60px auto;
+  position: relative;
+}
+.upperpart .profilrPicAndName {
+  width: 100%;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+}
+.upperpart .profilrPicAndName .profilePic {
+  flex: 4;
+  width: 100%;
+  height: 100%;
+}
+.upperpart .profilrPicAndName .profilePic .img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: auto;
+  display: block;
+}
+.upperpart .profilrPicAndName .userIdandSetting {
+  flex: 8;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.upperpart .profilrPicAndName .userIdandSetting .content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px 0;
+}
+.UserId {
+  width: 150px;
+  height: auto;
+  margin: 10px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: inline-block;
+}
+.profileActionBtn {
+  width: auto;
+
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.profileActionBtn button {
+  padding: 7px 12px;
+  color: #333;
+  font-weight: bold;
+  background-color: transparent;
+  margin: 0 10px;
+  border: 1px solid #333;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.followerAndFollowing {
+  display: inline;
+}
+.followerAndFollowing span {
+  margin: 0 10px;
+  display: inline-block;
+}
+.followerAndFollowing .followers,
+.followerAndFollowing .following {
+  cursor: pointer;
+}
+.username {
+  margin: 10px 25px;
+}
+.lowerPart {
+  width: 100%;
+  height: auto;
+}
+.galleryTag {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  position: relative;
+}
+.galleryTag span {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.galleryTag .active {
+  position: absolute;
+  top: -3px;
+  width: 33.33%;
+  height: 3px;
+  background-color: #0095f6;
+  display: inline-block;
+  padding: 0;
+  border-radius: 3px;
+  transition: 1s all ease-in-out;
+}
+.gallery {
+  width: 100%;
+  height: calc(100vh - 300px);
+  overflow: hidden;
+}
+.gallery .content {
+  width: 300%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  transition: 1s all ease-in-out;
+}
+.gallery .content .galleryContent,
+.gallery .content .tagedContent,
+.gallery .content .savedContent {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.tagedContent {
+  background-color: #fff;
+}
+.savedContent {
+  background-color: #fff;
+}
+.galleryContent {
+  background-color: #fff;
+}
+.galleryContent ul,
+.savedContent ul,
+.tagedContent ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+}
+.galleryContent ul::-webkit-scrollbar,
+.savedContent ul::-webkit-scrollbar,
+.tagedContent ul::-webkit-scrollbar {
+  width: 0;
+}
+.galleryContent ul li,
+.savedContent ul li,
+.tagedContent ul li {
+  width: 33.33%;
+  height: 300px;
+  border: 4px solid #fff;
+  cursor: pointer;
+}
+.galleryContent ul li img,
+.savedContent ul li img,
+.tagedContent ul li img {
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 430px) and (max-width: 770px) {
+  .profileContainer {
+    width: 100%;
+  }
+  .upperpart .profilrPicAndName .profilePic {
+    flex: 1;
+  }
+  .upperpart .profilrPicAndName .userIdandSetting {
+    flex: 1;
+  }
+  .upperpart .profilrPicAndName .userIdandSetting .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .galleryContent ul,
+  .savedContent ul,
+  .tagedContent ul {
+    justify-content: space-around;
+  }
+  .galleryContent ul li,
+  .savedContent ul li,
+  .tagedContent ul li {
+    width: 50%;
+  }
+}
+@media (max-width: 430px) {
+  .profileContainer {
+    width: 100%;
+  }
+  .upperpart .profilrPicAndName .profilePic {
+    flex: 1;
+  }
+  .upperpart .profilrPicAndName .userIdandSetting {
+    flex: 1;
+  }
+  .upperpart .profilrPicAndName .userIdandSetting .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .galleryContent ul,
+  .savedContent ul,
+  .tagedContent ul {
+    justify-content: center;
+  }
+  .galleryContent ul li,
+  .savedContent ul li,
+  .tagedContent ul li {
+    width: 300px;
+  }
+}

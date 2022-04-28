@@ -1,6 +1,5 @@
 const express = require("express");
 const app = express();
-const dotenv = require("dotenv");
 const cors = require("cors");
 const cookie = require("cookie-parser");
 const bodyParser = require("body-parser");
@@ -10,7 +9,9 @@ const cloudinary = require("cloudinary");
 const fileupload = require("express-fileupload");
 // configuration of dot env file .........................................................
 
-dotenv.config({ path: "backend/config/config.env" });
+if (process.env.NODE_ENV !== "PRODUCTION") {
+  require("dotenv").config({ path: "backend/config/config.env" });
+}
 
 const { mongooseConnection } = require("./db/mongooseConnection");
 
@@ -20,7 +21,7 @@ mongooseConnection();
 app.use(cookie());
 app.use(cors());
 
-// non production code
+// non production code---------------------------------------------
 
 // app.use(
 //   cors({
@@ -50,9 +51,9 @@ app.get("*", (req, res) => {
   res.sendFile(path.resolve(__dirname, "frontend/build/index.html"));
 });
 
-app.get("/", (req, res) => {
-  res.send("index is running");
-});
+// app.get("/", (req, res) => {
+//   res.send("index is running");
+// });
 app.listen(4000, () => {
   console.log("port is running on 4000");
 });

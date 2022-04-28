@@ -7,6 +7,7 @@ const UserRoutes = require("./routes/UserRoutes");
 const PostRoutes = require("./routes/PostRoutes");
 const cloudinary = require("cloudinary");
 const fileupload = require("express-fileupload");
+const path = require("path");
 // configuration of dot env file .........................................................
 
 if (process.env.NODE_ENV !== "PRODUCTION") {

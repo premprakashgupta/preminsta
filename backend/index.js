@@ -55,6 +55,6 @@ app.get("*", (req, res) => {
 // app.get("/", (req, res) => {
 //   res.send("index is running");
 // });
-app.listen(4000, () => {
+app.listen(process.env.PORT || 4000, () => {
   console.log("port is running on 4000");
 });
